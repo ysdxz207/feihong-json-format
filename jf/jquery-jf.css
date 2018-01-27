@@ -73,14 +73,7 @@ ul.json-dict, ol.json-array {
 .json-toggle:focus {
     outline: none;
 }
-/*a.json-toggle:before {
-    color: #aaa;
-    content: "\25BC"; !* down arrow *!
-    position: absolute;
-    display: inline-block;
-    width: 1em;
-    left: -1em;
-}*/
+
 .json-toggle-btn {
     color: #aaa;
     display: inline-block;
@@ -90,12 +83,12 @@ ul.json-dict, ol.json-array {
     margin-right: 0.5em;
     top: -0.2em;
     position: relative;
-    background: url(images/cursor_collapse.png) no-repeat center;
+    background: url(./images/cursor_collapse.png) no-repeat center;
     line-height: 24px;
     cursor: pointer;
 }
 .json-toggle-btn.collapsed {
-    background: url('images/cursor_expand.png') no-repeat center;
+    background: url(./images/cursor_expand.png) no-repeat center;
     cursor: pointer;
 }
 .json-toggle-btn hr {
