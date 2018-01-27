@@ -1,0 +1,68 @@
+@font-face{
+    font-family: 'FontAwesome';
+    src : url('../fonts/fontawesome-webfont.ttf');
+}
+
+body {
+    font-family: FontAwesome;
+    padding: 0px;
+    margin: 0px;
+    min-width: 130px;
+}
+.popup-main {
+
+}
+
+.popup-main .title{
+    background-color: #FFFFFF;
+    font-size: 18px;
+    color: #101010;
+    border-bottom: 4px solid #d9d9d9;
+    padding-left: 6px;
+    text-align: center;
+}
+
+.popup-main ul {
+    font-size: 14px;
+    line-height: 26px;
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+
+    /*禁止浏览器选择文本,防止双击选中文本*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.popup-main ul li {
+    cursor: pointer;
+    border-top: 1px solid #d9d9d9;
+    background-color: #FFFFFF;
+    color: #101010;
+    padding-left: 6px;
+}
+
+
+.popup-main ul li:hover {
+    background-color: #f4f4f4;
+}
+
+.popup-main ul li:hover::after {
+    content: '\f00c';
+    color: #7b7b7b;
+    float: right;
+    padding-right: 10px;
+}
+
+.popup-main ul li.checked::after{
+    content: '\f00c';
+    color: #0e90d2;
+    float: right;
+    padding-right: 10px;
+}
+
+
