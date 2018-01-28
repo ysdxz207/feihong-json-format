@@ -1,0 +1,10 @@
+/* CSS file placeholder. */
+
+ul {
+  list-style: none;
+}
+
+.main-json {
+  border: 1px solid red;
+  width: 90%;
+}

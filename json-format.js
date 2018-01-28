@@ -17,7 +17,8 @@ var JFFormatter = {};
                 lineHeight: '24',
                 collapsed: false,
                 showImg: obj['jf-config']['show_link_img'],
-                withQuotes: obj['jf-config']['key_with_quotes']
+                withQuotes: obj['jf-config']['key_with_quotes'],
+                collapsed: obj['jf-config']['collapsed']
             });
         });
     };

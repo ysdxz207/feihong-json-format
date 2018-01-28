@@ -16,7 +16,8 @@
     ],
   "browser_action": {
     "default_icon": { 
-      "19": "icon/icon-19.png"
+      "19": "icon/icon-19.png",
+      "38": "icon/icon-38.png"
     },
     "default_title": "feihong-json-format设置",
     "default_popup": "popup.html"

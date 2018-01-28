@@ -14,9 +14,6 @@ $(function () {
             var _this = $(this);
             var itemCheckedName = _this.attr('id');
 
-            if (itemCheckedName === 'about') {
-                return;
-            }
             var checked = toggleChecked(_this);
             var itemCheckedValue = checked;
 
