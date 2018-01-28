@@ -1,6 +1,6 @@
 
 .jf-main {
-    font-family: Tahoma,arial,simsun;
+    font-family: Tahoma,arial,simsun,FontAwesome;
 }
 
 .jf-main ul {
@@ -28,7 +28,6 @@
 .json-root, .json-root:hover, .json-root:active, .json-root:after {
     color: #000;
     font-weight: bold;
-    padding-left: 8px;
     padding-right:4px;
     cursor: pointer;
 }

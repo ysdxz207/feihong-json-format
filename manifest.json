@@ -4,13 +4,18 @@
   "description" : "json格式化工具",
   "background" : {
     "css": ["jf/jquery-jf.css"],
-    "scripts": ["jquery-3.2.1.min.js","jf/jquery-jf.js", "json-format.js", "background.js"],
+    "scripts": ["jquery-3.2.1.min.js",
+      "jf/jquery-jf.js",
+      "json-format.js",
+      "background.js"],
     "persistent": true
   },
   "content_scripts": [{
         "matches": ["http://*/*","https://*/*"],
         "css": ["jf/jquery-jf.css"],
-        "js": ["jquery-3.2.1.min.js","jf/jquery-jf.js","json-format.js","main.js"],
+        "js": ["jquery-3.2.1.min.js",
+          "jf/jquery-jf.js","json-format.js",
+          "main.js"],
         "run_at": "document_end"
       }
     ],
