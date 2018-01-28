@@ -41,7 +41,10 @@ $(function () {
         });
     };
 
+
+
     init = function () {
+
         chrome.storage.sync.get('jf-config', function (obj) {
             var obj = obj || {},
                 config = obj['jf-config'];
