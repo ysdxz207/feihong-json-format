@@ -39,10 +39,16 @@
 
         if (typeof json === 'string') {
             json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-            if (isUrl(json))
-                html += '<a href="' + json + '" class="json-value json-link" target="_blank">' + json + '</a>';
-            else
+            if (isUrl(json)) {
+                html += '<a href="' + json + '" class="json-value json-link" target="_blank">';
+                if (defaultOptions.showImg) {
+                    html += '<img src="'+json + '" onerror="javascript:this.parentNode.removeChild(this)">"';
+                }
+                html += json + '"</a>';
+
+            } else {
                 html += '<span class="json-value json-string">"' + json + '"</span>';
+            }
         }
         else if (typeof json === 'number') {
             html += '<span class="json-value json-number">' + json + '</span>';
@@ -162,6 +168,20 @@
             });
             if (defaultOptions.collapsed == true) {
                 $(this).find('.json-toggle-btn').click();
+            }
+
+
+            if (defaultOptions.showImg) {
+
+                $('.json-link').bind('mouseover', function () {
+                    var img = $(this).find('img');
+                    img.css('left', window.event.clientX + window.document.body.scrollLeft + 6);
+                    img.css('top', window.event.clientY + window.document.body.scrollLeft + 6);
+                    img.show(400);
+                }).bind('mouseout', function () {
+                    var img = $(this).find('img');
+                    img.hide(100);
+                });
             }
         });
 

@@ -104,3 +104,10 @@ ul.json-dict, ol.json-array {
     padding: 0 1em;
     cursor: pointer;
 }
+
+.json-link>img {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    float: left;
+}

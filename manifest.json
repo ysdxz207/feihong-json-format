@@ -8,7 +8,7 @@
       "jf/jquery-jf.js",
       "json-format.js",
       "background.js"],
-    "persistent": true
+    "persistent": false
   },
   "content_scripts": [{
         "matches": ["http://*/*","https://*/*"],

@@ -12,8 +12,12 @@ function initConfig() {
     };
     var cfg = {};
     cfg['jf-config'] = config;
-    chrome.storage.sync.set(cfg, function() {
+    chrome.storage.sync.get('jf-config', function(obj) {
+        if (JSON.stringify(obj) === '{}') {
+            chrome.storage.sync.set(cfg, function() {
 
+            });
+        }
     });
 }
 
